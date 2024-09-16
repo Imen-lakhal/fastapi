@@ -1,5 +1,6 @@
 import pytest
 from App import schemas
+from App.config import settings
 
 def test_get_all_posts(authorized_client, test_posts):
     res = authorized_client.get("/posts/")
@@ -139,3 +140,10 @@ def test_update_post_non_exist(authorized_client, test_user, test_posts):
         f"/posts/8000000", json=data)
 
     assert res.status_code == 404
+
+
+def test_port ():
+    assert settings.database_port == 5432 
+
+def test_token():
+    assert settings.access_token_expire_minutes == 30

@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: printer int
         run: |
-          echo ${{settings.database_port}}
-          echo ${{settings.access_token_expire_minutes}}
+          echo ${{secrets.database_port}}
+          echo ${{secrets.access_token_expire_minutes}}
 
   build:
 
