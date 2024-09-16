@@ -3,6 +3,14 @@ name: Build and Deploy Code
 on: [push, pull_request]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printer int
+        uses: |
+          echo ${{settings.database_port}}
+          echo ${{settings.access_token_expire_minutes}}
+
   build:
 
     env:
