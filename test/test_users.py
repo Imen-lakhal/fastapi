@@ -13,7 +13,7 @@ from App.config import settings
 
 
 
-
+ 
 def test_root(client):
     res= client.get("/")
     print(res.json().get('message'))

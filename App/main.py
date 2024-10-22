@@ -4,10 +4,14 @@ from .database import engine, get_db
 from .router import post, user, auth, vote
 from fastapi.middleware.cors import CORSMiddleware
 
-models.Base.metadata.create_all(bind=engine)
+
+#models.Base.metadata.create_all(bind=engine)
+
+
 
 app = FastAPI()
 
+#ay domain tnajam tahki bih ma3 api
 origins= ["*"]
 app.add_middleware(
     CORSMiddleware,
