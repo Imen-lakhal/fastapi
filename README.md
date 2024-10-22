@@ -57,11 +57,12 @@ http://127.0.0.1:8000/docs
 ## After run this API you need a database in postgres
 
 Create a database in postgres then create a file name .env and write the following things in you file
-DATABASE_HOSTNAME = localhost
-DATABASE_PORT = 5432
-DATABASE_PASSWORD = passward_that_you_set
-DATABASE_NAME = name_of_database
-DATABASE_USERNAME = User_name
-SECRET_KEY = get_key_for_youself
-ALGORITHM = HS256
-ACCESS_TOKEN_EXPIRE_MINUTES = 60(base)
+
+- DATABASE_HOSTNAME = localhost
+- DATABASE_PORT = 5432
+- DATABASE_PASSWORD = passward_that_you_set
+- DATABASE_NAME = name_of_database
+- DATABASE_USERNAME = User_name
+- SECRET_KEY = get_key_for_youself
+- ALGORITHM = HS256
+- ACCESS_TOKEN_EXPIRE_MINUTES = 60(base)
