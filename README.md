@@ -33,22 +33,26 @@ To run this project locally, follow these steps:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Sanjeev-Thiyagarajan/fastapi-course.git
+git clone https://github.com/Imen-lakhal/fastapi.git
+```
 
 Then install fastapp using all flag like
 
 ```bash
 pip install fastapi[all]
+```
 
 Then go this repo folder in your local computer run follwoing command
 
 ```bash
 uvicorn App.main:app --reload
+```
 
 Then you can use following link to use the API
 
 ```bash
 http://127.0.0.1:8000/docs 
+```
 
 ## After run this API you need a database in postgres
 
